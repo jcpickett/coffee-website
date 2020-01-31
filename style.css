@@ -1,0 +1,26 @@
+/*This is a comment*/
+
+h1{
+    color: brown;
+    font-size: 100px;
+
+    font-family: 'Palatino', serif;
+}
+
+#second-header{
+    color: #000000;
+}
+
+p{
+    font-size: 12px;
+    width: 30%;
+    font-family: 'avenir', sans-serif;
+}
+
+#hero-wrapper{
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10%;
+}
