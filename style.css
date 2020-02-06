@@ -3,18 +3,23 @@
 h1{
     color: brown;
     font-size: 100px;
+    z-index: 2;
+
+    display: inline-block;
 
     font-family: 'Palatino', serif;
 }
 
 #second-header{
-    color: #000000;
+    color: green;
+    z-index: 2;
 }
 
 p{
     font-size: 12px;
-    width: 30%;
+    width: 15%;
     font-family: 'avenir', sans-serif;
+
 }
 
 #hero-wrapper{
@@ -23,4 +28,19 @@ p{
     margin-left: auto;
     text-align: center;
     margin-top: 10%;
+    position: relative;
+    z-index: 2;
+}
+
+#hero-beans{
+    background-image: url("img/beans.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+
+    width: 50%;
+    height: 750px;
 }
