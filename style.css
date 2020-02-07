@@ -1,9 +1,16 @@
 /*This is a comment*/
 
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
 h1{
-    color: brown;
+    color: #451F11;
     font-size: 100px;
     z-index: 2;
+    margin-left: 20px;
+    margin-bottom: 0px;
 
     display: inline-block;
 
@@ -11,23 +18,21 @@ h1{
 }
 
 #second-header{
-    color: green;
+    color: white;
     z-index: 2;
 }
 
 p{
     font-size: 12px;
-    width: 15%;
+    width: 15vw;
+    margin-left: 75px;
     font-family: 'avenir', sans-serif;
 
 }
 
 #hero-wrapper{
-    width: 600px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 700px;
     text-align: center;
-    margin-top: 10%;
     position: relative;
     z-index: 2;
 }
@@ -41,6 +46,56 @@ p{
     right: 0px;
     z-index: 1;
 
-    width: 50%;
+    width: 50vw;
     height: 750px;
+}
+
+#hero-section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar{
+    position: absolute;
+    margin-left: 0px;
+    margin-right: 0px;
+    top: 0px;
+    width: 100vw;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    
+    flex-direction: row;
+
+    
+}
+
+h3{
+    font-family: 'Palatino', serif;
+    font-size: 22px;
+    color: white;
+    margin-right: 50px;
+}
+
+#nav-text{
+    top: 0px;
+    display: flex;
+    width: 50%;
+}
+
+#nav-image{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-top: 20px;
+    top: 10px;
+    width: 50%;
+}
+
+#icon{
+    height: 22px;
+    width: 22px;
+    margin-right: 50px;
 }
