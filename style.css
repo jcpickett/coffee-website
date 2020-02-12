@@ -24,10 +24,10 @@ h1{
 
 p{
     font-size: 12px;
-    width: 15vw;
-    margin-left: 75px;
+    width: 40%;
+    margin-left: 40px;
     font-family: 'avenir', sans-serif;
-
+    text-align: right;
 }
 
 #hero-wrapper{
@@ -35,6 +35,7 @@ p{
     text-align: center;
     position: relative;
     z-index: 2;
+    padding-left: 15px;
 }
 
 #hero-beans{
@@ -47,7 +48,7 @@ p{
     z-index: 1;
 
     width: 50vw;
-    height: 750px;
+    height: 100vh;
 }
 
 #hero-section{
@@ -62,7 +63,7 @@ p{
     margin-left: 0px;
     margin-right: 0px;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     z-index: 4;
     display: flex;
     justify-content: space-between;
@@ -92,10 +93,42 @@ h3{
     margin-top: 20px;
     top: 10px;
     width: 50%;
+    padding-left: 50px;
 }
 
 #icon{
-    height: 22px;
-    width: 22px;
+    height: 25px;
+    width: 25px;
     margin-right: 50px;
+    padding-left: 25px;
+}
+
+.standard-margin-section{
+    padding-top: 200px;
+    max-width: 960px;
+    margin: auto;
+}
+
+#section-two{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.column-coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.coffee-cup{
+    height: 160px;
+    width: 240px;
+}
+
+h4{
+    font-size: 22px;
 }
