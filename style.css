@@ -23,7 +23,7 @@ h1{
 }
 
 p{
-    font-size: 12px;
+    font-size: 14px;
     width: 40%;
     margin-left: 40px;
     font-family: 'avenir', sans-serif;
@@ -35,7 +35,6 @@ p{
     text-align: center;
     position: relative;
     z-index: 2;
-    padding-left: 15px;
 }
 
 #hero-beans{
@@ -93,7 +92,7 @@ h3{
     margin-top: 20px;
     top: 10px;
     width: 50%;
-    padding-left: 50px;
+    padding-left: 25px;
 }
 
 #icon{
@@ -111,7 +110,7 @@ h3{
 
 #section-two{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -125,8 +124,8 @@ h3{
 }
 
 .coffee-cup{
-    height: 160px;
-    width: 240px;
+    height: auto;
+    width: 100%;
 }
 
 h4{
