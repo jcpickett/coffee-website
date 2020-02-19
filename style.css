@@ -183,3 +183,44 @@ h5{
 .left{
     text-align: left;
 }
+
+.contact-section{
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lets-talk-image{
+    background-image: url(img/esp_.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-input{
+    width: 49%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+input, textarea{
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 40px;
+}
+
+.text-width{
+    width: 50%;
+}
+
+.lets-talk{
+    color: white;
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
