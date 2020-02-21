@@ -3,6 +3,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    background-color: #f7f7f7;
 }
 
 h1{
@@ -55,6 +56,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 #nav-bar{
@@ -121,6 +123,7 @@ h3{
     flex-direction: column;
     align-items: center;
     width: 30%;
+    background-color: white;
 }
 
 .coffee-cup{
@@ -152,6 +155,8 @@ h4{
 
     padding-left: 40px;
     padding-right: 40px;
+
+    background-color: white;
 }
 
 #grid-esp-pic{
@@ -173,6 +178,8 @@ h4{
 
     padding-left: 40px;
     padding-right: 40px;
+
+    background-color: white;
 }
 
 h5{
@@ -223,4 +230,55 @@ input, textarea{
     font-size: 35px;
     margin: 0px;
     padding: 0px;
+}
+
+.footer{
+    margin-top: 200px;
+    padding-top: 0px;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.move-down{
+    display: flex;
+}
+
+.foot-coffee{
+    font-size: 50px;
+}
+
+.footer-link{
+    color: black;
+}
+
+.copyright-wrapper{
+    background-color: #f7f7f7;
+}
+
+.copyright-text{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+#footer-wrapper{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.submit{
+    transition: transform 1s;
+}
+
+.submit:hover{
+    transform: scale(1.1);
 }
