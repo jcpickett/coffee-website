@@ -317,6 +317,17 @@ input, textarea{
     animation-timing-function: ease-in;
 }
 
+#drop-box, #drop-link{
+    display: none;
+}
+
+#drop-down:hover #drop-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
 @keyframes ilove{
     0%{
         transform: translateY(-50px);
@@ -339,7 +350,7 @@ input, textarea{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
     #hero-beans{
         top: auto;
         bottom: 0;
@@ -387,11 +398,86 @@ input, textarea{
     #grid-cap-pic{
         grid-column: 1/2;
         grid-row: 3/4;
-        height: 300px;
+        min-height: 300px;
     }
     
     #grid-cap{
         grid-column: 1/2;
         grid-row: 4/5;
+    }
+
+    .contact-section{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .lets-talk-image{
+        background-image: none;
+    }
+
+    .lets-talk{
+        color: #451F11;
+        text-align: right;
+        width: 70%;
+    }
+
+    .info-input{
+        width: 80%;
+    }
+
+    .flex-space-between{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-link{
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .copyright-text{
+        padding: 0;
+    }
+
+    #nav-image, #nav-text{
+        display: none;
+    }
+
+    #nav-bar{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #drop-box{
+        display: block;
+        background-image: url("img/drop_down.svg");
+        height: 50px;
+        width: 50px;
+        margin: 10px;
+        background-size: cover;
+    }
+
+    #drop-link{
+        background-color: white;
+    }
+
+    #drop-down{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        min-width: 150px;
+    }
+
+    .drop-text{
+        padding: 10px;
+        color: black;
+        font-size: 25px;
+        text-decoration: none;
+        font-family: Avenir;
+        font-weight: bold;
+    }
+
+    .drop-text:hover{
+        background-color: #f7f7f7;;
     }
 }
