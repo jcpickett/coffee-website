@@ -31,6 +31,7 @@ p{
     margin-left: 40px;
     font-family: 'Avenir', sans-serif;
     text-align: right;
+    color: #451F11;
 }
 
 #hero-wrapper{
@@ -146,6 +147,7 @@ h3{
 
 h4{
     font-size: 22px;
+    color: #451F11;
 }
 
 #section-three{
@@ -164,6 +166,8 @@ h4{
 
     padding-left: 40px;
     padding-right: 40px;
+
+    color: #451F11;
 
     background-color: white;
 }
@@ -185,8 +189,8 @@ h4{
 
     background-image: url(img/cap.jpg);
     background-size: cover;
-    width: auto;
     height: 100%;
+    width: auto;
 }
 
 #grid-cap{
@@ -199,12 +203,15 @@ h4{
     padding-left: 40px;
     padding-right: 40px;
 
+    color: #451F11;
+
     background-color: white;
 }
 
 h5{
     font-size: 14px;
     font-family: 'Avenir', sans-serif;
+    color: #451F11;
 }
 
 .left{
@@ -233,16 +240,20 @@ h5{
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: white;
 }
 
 input, textarea{
     margin-left: 50px;
     margin-top: 30px;
     height: 40px;
+    background-color: #f7f7f7;
+    border: none;
+    color: #451F11;
 }
 
 .text-width{
-    width: 50%;
+    width: 70%;
 }
 
 .lets-talk{
@@ -271,10 +282,11 @@ input, textarea{
 
 .foot-coffee{
     font-size: 50px;
+    color: #451F11;
 }
 
 .footer-link{
-    color: black;
+    color: #451F11;
 }
 
 .copyright-wrapper{
@@ -287,6 +299,7 @@ input, textarea{
     font-size: 12px;
     margin: 0px;
     padding-top: 5px;
+    color: #451F11;
 }
 
 #footer-wrapper{
@@ -297,6 +310,10 @@ input, textarea{
 
 .submit{
     transition: transform 1s;
+    background-color: #451F11;
+    border: none;
+    color: #f7f7f7;
+    width: 15%;
 }
 
 .submit:hover{
@@ -422,7 +439,7 @@ input, textarea{
     }
 
     .info-input{
-        width: 80%;
+        width: 100%;
     }
 
     .flex-space-between{
@@ -465,12 +482,12 @@ input, textarea{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        min-width: 150px;
+        min-width: 50px;
     }
 
     .drop-text{
         padding: 10px;
-        color: black;
+        color: #451F11;
         font-size: 25px;
         text-decoration: none;
         font-family: Avenir;
