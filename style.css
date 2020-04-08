@@ -1,11 +1,35 @@
 /*This is a comment*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0px;
     margin: 0px;
     background-color: #f7f7f7;
 
     font-size: 100%;
+}
+
+#scroll{
+    position: fixed;
+    background-image: url(img/jumptotop.svg);
+    background-size: cover;
+    bottom: 50px;
+    left: 50px;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+
+    width: 75px;
+    height: 75px;
+
+    transition: 0.2s;
+}
+
+#scroll:hover{
+    transform: scale(1.1);
 }
 
 h1{

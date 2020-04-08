@@ -42,3 +42,11 @@ me.nickname = "Chris";
 me.skills[4] = "Time-Travel";
 
 console.log(me);
+
+let scrollElement = document.getElementById("scroll");
+
+scrollElement.addEventListener("click", scrollToTop);
+
+function scrollToTop(){
+    window.scrollTo(0, 0);
+}
