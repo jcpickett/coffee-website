@@ -44,9 +44,35 @@ me.skills[4] = "Time-Travel";
 console.log(me);
 
 let scrollElement = document.getElementById("scroll");
+let textElement = document.getElementsByClassName("text-width");
+let submitElement = document.getElementById("submitt");
 
 scrollElement.addEventListener("click", scrollToTop);
+window.addEventListener("scroll", scrollHider);
+submitElement.addEventListener("click", errorMessage);
+
 
 function scrollToTop(){
     window.scrollTo(0, 0);
 }
+function scrollHider(){
+    if(window.scrollY === 0){
+        scrollElement.style.display = "none";
+    }
+    else{
+        scrollElement.style.display = "block";
+    }
+}
+
+function errorMessage(){
+    var nam = document.getElementById("submitName").nodeValue;
+    var emai = document.getElementById("submitEmail").nodeValue;
+    var mes = document.getElementById("submitMessage").nodeValue;
+
+    if((nam === "") || (emai === "") || (mes === "") ){
+        submitElement.preventDefault();
+    }
+}
+
+
+  
