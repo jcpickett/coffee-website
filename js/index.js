@@ -75,6 +75,18 @@ function errorMessage(e){
         e.preventDefault();
         document.getElementById("error").innerHTML = "Please fill the rest in.";
     }
+    else{
+        let xhr = new XMLHttpRequest();
+        xhr.addEventListener(load, processSubmitFormResponse());
+        xhr.open("POST", "https://hooks.zapier.com/hooks/catch/5963107/o9gm325");
+        let body = {
+            name: nam.value,
+            email: emai.value,
+            message: mes.value,
+            to: "nlpacket@gmail.com"
+        }
+        xhr.send(JSON.stringify(body));
+    }
 }
 
 let request = new XMLHttpRequest();
@@ -84,7 +96,7 @@ request.send();
 function processResponse (e) {
     console.log(JSON.parse(e.target.response));
     price = JSON.parse(e.target.response)[0].Last;
-    pricingElement.innerHTML = price;
+    pricingElement.innerHTML = "$" + price;
 }
 
 

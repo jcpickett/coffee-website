@@ -81,14 +81,22 @@ p{
     margin-bottom: 0;
     z-index: 5;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+}
+
+#bigMetric{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 #metric{
     color: white;
     font-size: 20px;
     text-align: left;
+    width: 100%;
+    margin-left: 0;
 }
 
 #hero-beans{
