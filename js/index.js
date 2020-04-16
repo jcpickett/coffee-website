@@ -46,10 +46,12 @@ console.log(me);
 let scrollElement = document.getElementById("scroll");
 let textElement = document.getElementsByClassName("text-width");
 let submitElement = document.getElementById("submitt");
+let pricingElement = document.getElementById("coffeePrices-text");
 
 scrollElement.addEventListener("click", scrollToTop);
 window.addEventListener("scroll", scrollHider);
 submitElement.addEventListener("click", errorMessage);
+
 
 
 function scrollToTop(){
@@ -64,15 +66,30 @@ function scrollHider(){
     }
 }
 
-function errorMessage(){
-    var nam = document.getElementById("submitName").nodeValue;
-    var emai = document.getElementById("submitEmail").nodeValue;
-    var mes = document.getElementById("submitMessage").nodeValue;
+function errorMessage(e){
+    var nam = document.getElementById("submitName").value;
+    var emai = document.getElementById("submitEmail").value;
+    var mes = document.getElementById("submitMessage").value;
 
     if((nam === "") || (emai === "") || (mes === "") ){
-        submitElement.preventDefault();
+        e.preventDefault();
+        document.getElementById("error").innerHTML = "Please fill the rest in.";
     }
 }
+
+let request = new XMLHttpRequest();
+request.addEventListener("load", processResponse);
+request.open("GET", "https://api.tradingeconomics.com/markets/search/coffee?c=guest:guest&f=json");
+request.send();
+function processResponse (e) {
+    console.log(JSON.parse(e.target.response));
+    price = JSON.parse(e.target.response)[0].Last;
+    pricingElement.innerHTML = price;
+}
+
+
+
+
 
 
   
